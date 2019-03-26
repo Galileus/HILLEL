@@ -1,2 +1,2 @@
 # HILLEL
-School projects
+School projects and home works
