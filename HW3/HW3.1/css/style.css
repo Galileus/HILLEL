@@ -6,13 +6,11 @@ div {
 .main div {
 	border: 3px solid black;
 	margin: 0 auto;
-}	
-
-
+}
 
 .one {
 	width: 600px;
-	height: 400px;
+	height: 300px;
 }
 
 .one > span {
@@ -21,7 +19,7 @@ div {
 
 .two {
 	width: 500px;
-	height: 300px;
+	height: 250px;
 	align-content: center;
 }
 
@@ -35,5 +33,32 @@ div {
 }
 
 .three > span {
-	color: green;
+	color: #9c27b0;
+}
+
+.three > div {
+	width: 300px;
+	height: 150px;
+}
+
+.three > div span {
+	color: #4caf50;
+}
+
+.three > div > div {
+	width: 200px;
+	height: 100px;
+}
+
+.three > div > div span {
+	color: #ff9800;
+}
+
+.three > div > div > div {
+	width: 100px;
+	height: 50px;
+}
+
+.three > div > div > div span {
+	color: #2196f3;
 }
