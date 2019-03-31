@@ -1,0 +1,39 @@
+
+div {
+	box-sizing: border-box;
+}
+
+.main div {
+	border: 3px solid black;
+	margin: 0 auto;
+}	
+
+
+
+.one {
+	width: 600px;
+	height: 400px;
+}
+
+.one > span {
+	color: red;
+}
+
+.two {
+	width: 500px;
+	height: 300px;
+	align-content: center;
+}
+
+.two > span {
+	color: blue;
+}
+
+.three {
+	width: 400px;
+	height: 200px;
+}
+
+.three > span {
+	color: green;
+}
