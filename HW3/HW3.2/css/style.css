@@ -1,3 +1,125 @@
-p {
-	color:red;
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+.header,
+.section,
+.footer {
+	margin: 0px auto;
+	width: 1200px;
+}
+
+.container {
+	border-top: 3px solid #02ff02;
+}
+
+.head img {
+	float: left;
+	margin-top: 10px;
+}
+
+.head nav {
+	float: right;
+	margin-top: 80px;
+}
+
+.menu li {
+	float: left;
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	margin-right: 10px;
+	font-size: 25px;
+}
+
+.menu li:first-child a {
+	font-weight:bold; 
+}
+
+.info {
+	margin:15px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid #02ff02;
+} 
+
+.info h1 {
+	text-align: center; 
+}
+
+.options {
+	display: flex;
+	justify-content: center;
+}
+
+.options a {
+	display: block;	
+	color: orange;
+	margin:10px;
+	font-size: 20px;
+} 
+
+.options a:nth-child(2) {
+	text-decoration:none;
+}
+
+.one {
+	width: 300px;
+	padding:10px 0px 10px 40px;	
+}
+
+.one a {
+	display: block;
+	color: orange;
+	font-size: 20px;
+}
+
+#first {
+	border-bottom: 2px solid grey;
+}
+
+.content h2,
+.finish h2 {	
+	padding: 20px 0;
+	text-align:center;
+	font-size: 20px;
+}
+
+#img {
+	margin: 0px auto;
+	width: 800px;
+}
+
+.content a {
+	display: block;	
+	margin: 20px 0;
+	text-align:center;
+	font-size: 25px;
+	color: orange;
+}
+
+.links p {
+	display: block;
+	margin:0px auto;
+	text-align: center;
+}
+
+#soc {
+	margin: 0px auto;
+	width: 200px;
 }
