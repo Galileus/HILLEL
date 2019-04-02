@@ -1,6 +1,6 @@
-.header{
-    width: 900px;    
-    background: red; 
+.section {
+    width: 900px;
+    background: red    
 }
 
 .menu_wrap,
@@ -9,6 +9,10 @@
 	border: 1px solid;
 	width: 28%;
 	margin:5px;
+}
+
+.menu_wrap {
+	width: 67%;
 }
 
 .logo {
@@ -20,10 +24,6 @@
 	padding: 5px;
 }
 
-.menu_wrap {
-	width: 67%;
-}
-
 .menu div {
 	display: inline-block;
 	border: 1px solid;
@@ -33,5 +33,28 @@
 
 .menu {
 	text-align:right;
+}
+
+#body {
+	background: yellow;
+}
+
+#footer div,
+#body div {
+	height: 500px;
+	border-radius: 5px 0px 0px 5px ;
+}
+
+#footer .menu_wrap,
+#body .menu_wrap {
+	border-radius: 0px 5px 5px 0px ;
+}
+
+#footer {
+	background: green;
+}
+
+#footer div {
+	height: 200px;
 }
 
