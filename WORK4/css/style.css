@@ -1,0 +1,33 @@
+* {
+	border: 1px solid;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+	background: red;	
+}
+
+.header {
+	margin: 0px auto;
+	display: inline-block;
+}
+
+.logo_wriper {
+	width: 29%;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid;
+}
+
+.logo {
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	display: inline-block;
+}
+
