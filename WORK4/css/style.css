@@ -1,31 +1,32 @@
-* {
-	border: 1px solid;
+.header{
+    width: 900px;
+    
+    background-color: red; 
 }
-
-div {
-	box-sizing: border-box;
-}
-
-.container {
-	width: 1200px;
-	margin: 0px auto;
-	background: red;	
-}
-
-.header {
-	margin: 0px auto;
-}
-
-.logo_wriper {
-	width: 29%;
-	margin: 10px;
-	border: 1px solid;
-}
-
 .logo {
-	padding: 10px;
-	border: 1px solid;
-	border-radius: 2px;
-	display: inline-block;
+    border: 1px solid black;
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
 }
-
+.logo_wrap{
+    border: 1px solid black;
+    width: 22%;
+    border-radius: 3px;
+    margin: 4px;
+    padding: 5px;
+}
+.menu{
+   border: 1px solid black;
+   width: 68%;
+   display: inline-block;
+   padding: 5px; 
+   text-align: right;
+}
+.menu_wraper {
+   border: 1px solid black;
+   display: inline-block;
+   padding: 5px;
+}
