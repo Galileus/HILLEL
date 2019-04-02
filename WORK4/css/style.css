@@ -1,32 +1,37 @@
 .header{
-    width: 900px;
-    
-    background-color: red; 
+    width: 900px;    
+    background: red; 
 }
+
+.menu_wrap,
+.logo_wrap {
+	display: inline-block;
+	border: 1px solid;
+	width: 28%;
+	margin:5px;
+}
+
 .logo {
-    border: 1px solid black;
-    width: 20%;
-    margin-top: 5px;
-    margin-left: 5px;
-    text-align: center;
-    display: inline-block;
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 20%;
+	margin:2px;
+	padding: 5px;
 }
-.logo_wrap{
-    border: 1px solid black;
-    width: 22%;
-    border-radius: 3px;
-    margin: 4px;
-    padding: 5px;
+
+.menu_wrap {
+	width: 67%;
 }
-.menu{
-   border: 1px solid black;
-   width: 68%;
-   display: inline-block;
-   padding: 5px; 
-   text-align: right;
+
+.menu div {
+	display: inline-block;
+	border: 1px solid;
+	margin:2px;
+	padding: 5px;
 }
-.menu_wraper {
-   border: 1px solid black;
-   display: inline-block;
-   padding: 5px;
+
+.menu {
+	text-align:right;
 }
+
