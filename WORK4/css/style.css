@@ -1,6 +1,7 @@
 .section {
     width: 900px;
-    background: red    
+    background: red;
+    margin:0px auto;    
 }
 
 .menu_wrap,
