@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .section {
     width: 900px;
     background: red;
