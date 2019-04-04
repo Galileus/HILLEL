@@ -2,42 +2,56 @@
 	box-sizing: border-box;
 }
 
-.section {
-    width: 900px;
-    background: red;
-    margin:0px auto;    
+body {
+	margin:0px;
+	padding: 0px;
 }
 
-.menu_wrap,
-.logo_wrap {
+.main {
+	width: 900px;
+    margin:0px auto;
+}
+
+.section {
+    width: 99%;
+    padding: 5px;
+}
+
+#head {
+	background: red;
+}
+
+.logo_wrap,
+.menu_wrap {
 	display: inline-block;
 	border: 1px solid;
+	padding: 2px;
+}
+
+.logo_wrap {
 	width: 28%;
-	margin:5px;
 }
 
 .menu_wrap {
-	width: 67%;
+	width: 71.5%;
 }
 
 .logo {
-	display: inline-block;
 	border: 1px solid;
 	border-radius: 5px;
-	width: 20%;
-	margin:2px;
-	padding: 5px;
-}
-
-.menu div {
-	display: inline-block;
-	border: 1px solid;
-	margin:2px;
+	width: 22%;
 	padding: 5px;
 }
 
 .menu {
 	text-align:right;
+}
+
+.menu div {
+	display: inline-block;
+	border: 1px solid;
+	padding: 5px;
+	width: 8%;
 }
 
 #body {
