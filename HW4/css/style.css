@@ -2,39 +2,32 @@
 	box-sizing: border-box;
 }
 
-body {
-	margin: 0px;
-	padding: 0px;
-}
-
 .main {
 	width: 900px;
-	height: auto;
+	padding: 5px;
 	margin: 0px auto;
 	border:3px solid #12e412;
 }
 
 .section {
-	width: 98%;
+	width: 99%;
+	margin:5px;
+	padding: 5px;
 	border:3px solid red;
-	display: inline-block;
-	margin: 5px;
 }
 
 .section div {
 	display: inline-block;
 	border: 3px solid blue;
-	margin:5px;
+	height: 90px;
 }
 
 .logo {
 	width: 27%;
-	padding: 41px;
 }
 
 .menu {
-	width: 40%;
-	padding: 41px;
+	width: 44%;
 }
 
 .contact  {
@@ -51,33 +44,34 @@ body {
 #menu div {
 	width: 22%;
 	padding: 10px;
+	height: 30px;
 }
 
 #menu div:last-child,
 #menu div:first-child {
-	width: 25%;
+	width: 27.3%;
 }
 
-.list {
-	width: 30%;
-	padding: 239px 50px;
+#content div {
+	width: 32.5%;
+	padding: 10px;
+	height: 425px;
 }
 
-.img {
+#content .img {
 	width: 67%;
-
 }
 
 .img span {
 	display: block;
 	border: 3px solid #ffeb3b;
-	margin:15px;
+	margin:6px;
 }
 
 .img span:nth-child(1) {
-	padding: 190px 50px;
+	padding: 150px 0px;
 }
 
 .img span:nth-child(2) {
-	padding: 20px 50px;
+	padding: 35px 0px;
 }
