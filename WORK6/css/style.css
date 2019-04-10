@@ -1,0 +1,84 @@
+html,body {
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.main {
+	width: 100%;
+	padding: 0px;
+    margin: 0px;
+}
+
+.menu {
+	width: 265px;
+    margin:0px auto;
+}
+
+.nav {
+	display: block;
+    padding: 10px 0px 10px 40px;
+    margin: 20px;
+    list-style: none;
+    width: 350px;
+}
+
+.nav > li {
+	float: left;
+	position: relative;
+}
+
+.nav li a {
+	text-decoration: none;
+	display: block;
+	background: green;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 5px 20px;
+	margin-right: 15px;
+	color: white;
+	list-style: none;
+	width: 80px;
+} 
+
+.nav li a:hover {
+	background: white;
+	color: green;
+}
+
+.submenu li a {
+    border-radius: 15px;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	right: 12px;
+    padding: 0px;
+    width: 84px;
+    background-color: white;
+    list-style: none;
+    text-align: center;
+}
+.submenu > li {
+	display: block;
+}
+
+.submenu li a {
+    margin: 5px auto;
+	display: block;
+	text-decoration: none;
+	background-color: green;
+	border: 1px solid green;
+}
+
+.nav li:hover > .submenu {
+    display: block;
+}
