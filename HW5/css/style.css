@@ -1,0 +1,65 @@
+html, body{
+     height: 101%;                        
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.section {
+    height: 100%;                         
+}
+
+#face {
+    background: url(../img/1.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top: 0.1px;      
+}
+
+#body {
+    background: url(../img/2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover
+}
+
+#foot {
+    background: url(../img/3.jpg);
+    background-repeat:no-repeat;
+    background-size:cover
+}
+/* 
+.menu {
+    width: 20%;
+    margin: 25% auto;
+    text-align: center;
+}
+
+.menu ul{
+    margin: 0px;
+    border-radius: 5px;
+    padding: 0px;
+    font-size: 25px;
+    height:100%;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 30%;
+    text-align:center;
+    background: #FFC107;              
+}
+
+.menu a {
+    text-decoration:none;
+    color:black;
+}
+
+ */
