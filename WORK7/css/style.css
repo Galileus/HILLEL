@@ -31,6 +31,31 @@ ul, li {
 
 /*-------------------------main-------*/
 
+#body {
+	margin-left: 20px;
+}
+
+.button {
+	border: 1pxsolid;
+	background: grey;
+	width: 120px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.text {
+	border:1px solid;
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	overflow:hidden;
+	transition: all 1s ease-out;
+}
+
+.button:hover ~ .text {
+	height: 300px;
+}
+
 p {
-	color: red;
+	margin: 0px;
 }
