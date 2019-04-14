@@ -1,0 +1,36 @@
+/*-------------------------main-------*/
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+div, p, a, img, form, button {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------------------------main-------*/
+
+p {
+	color: red;
+}
