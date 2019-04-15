@@ -27,6 +27,12 @@ ul, li {
 	margin: 0px;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*-----------------container------------*/
 
 #head {
@@ -35,12 +41,12 @@ ul, li {
 	background: #454545;
 }
 
-.menu {
+nav {
 	float: right;
 	margin-right: 200px;
 }
 
-.menu > ul >li {
+.menu > li {
 	float: left;
 	position: relative;
 }
@@ -50,24 +56,31 @@ ul, li {
 	color: white;
 	background: #454545;
 	padding: 10px;
-	transition: all 1s ease;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
+	transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+	background: #343434;
 }
 
 .menu .fa {
 	margin:0 5px;
 }
 
-.menu li a:hover {
-	background: #343434;
+.sub {
+	opacity: 0;
+	visibility: hidden;	
+	transition: all 0.5s ease;	
+}
+
+ .menu > li a:hover ~ .sub {
+	opacity: 1;
+  	visibility: visible;
 } 
 
-.sub > li {
-	position: relative;
-}
 
-.subsub  {
-	position: absolute;
-}
+
+/* 	transition: all 0.5s ease; */

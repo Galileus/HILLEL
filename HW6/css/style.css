@@ -1,8 +1,12 @@
 /*-------------------------main-------*/
+html,
+body {
+  height: 100%;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
-  height: 100%;
 }
 
 div, p, a, img, form, button {
@@ -33,31 +37,33 @@ ul, li {
 /*--------------------------container----*/
 
 .container {
-  width: 100%;
   height: 4000px;
+  position: relative;
+  min-height: 100%;
 }
 
 .head {
-  position: fixed; 
-  left: 0; right: 0;
-  top: 0; 
-  padding: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
   background: grey;
-  color: #fff;
- }
+}
 
 .head h1 {
-  margin: 0;
-  text-align: center;
+  margin:0px;
+  padding:10px;
+  text-align: center;  
 }
 
-.body {  
-  margin: 70px 5px 10px;
-  padding-bottom: 90px;
+.body {
+  margin: 90px 10px 0;
+  height: 98.7%;
 }
 
-.block div {
-  height: 2000px;
+.block {
+  height: 99%;
 }
 
 .one {
@@ -69,24 +75,23 @@ ul, li {
 
 .two {
   width: 34%;
+  height: 100%;
   background: orange;
   float: right;
 }
 
 
- .foot {
+.foot {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 80px;
-  padding: 10px; 
-  background: green;
-  color: #fff;
- }
+  background: red;
+}
 
 .foot h1 {
-  margin: 0;
-  padding-top: 10px;
-  text-align: center;
-}	
+  margin:0px;
+  padding:10px;
+  text-align: center;  
+}
