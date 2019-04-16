@@ -41,7 +41,7 @@ ul, li {
 	background: #454545;
 }
 
-nav {
+.nav {
 	float: right;
 	margin-right: 200px;
 }
@@ -66,21 +66,45 @@ nav {
 	background: #343434;
 }
 
-.menu .fa {
-	margin:0 5px;
-}
-
 .sub {
+	position: absolute;
+	left: 0px;
+    padding: 0px;
+    width: 110px;
 	opacity: 0;
-	visibility: hidden;	
+	visibility: hidden;
 	transition: all 0.5s ease;	
 }
 
- .menu > li a:hover ~ .sub {
+ .menu .item:hover .sub {
 	opacity: 1;
-  	visibility: visible;
+	visibility: visible;
 } 
 
+.psevdo::after {
+ 	content: ' ˅'; 
+}
 
+.psevdosub::after {
+ 	content: ' >'; 
+}
 
-/* 	transition: all 0.5s ease; */
+.sub > li {
+	position: relative;
+}
+
+.subsub {
+	position: absolute;
+	top: 0px;
+	left: 110px;
+    padding: 0px;
+    width: 115px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease;	
+}
+
+ .sub .itemm:hover  .subsub {
+	opacity: 1;
+	visibility: visible;
+}

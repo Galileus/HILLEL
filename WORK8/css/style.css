@@ -1,0 +1,85 @@
+/*--------------main----------------------*/
+body {
+	color:#fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+	background: #ECECEC;	
+}
+
+div, p, a, img, form, button {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-----------------container------------*/
+
+.container {
+	width: 100%;
+	
+}
+
+.section {
+	width: 80%;
+	height: 100%;
+	border:1px solid;
+	margin: 0px auto;
+}
+
+.top {
+	padding: 70px 0 50px;
+}
+
+.button, 
+.sign {
+	float: left;
+	padding: 5px;
+	border:1px solid;
+}
+
+.button {
+	background: #E63F85;
+	width: 100px;
+	padding: 5px;
+	margin-right: 5px;
+}
+
+.button p {
+	font-weight: 300;
+}
+.nav {
+	float: right;
+
+}
+
+
+.menu .item {
+	float: left;
+}
+
+.block {
+	width: 100%;
+	background: white;
+	height: 200px;
+}
