@@ -13,19 +13,33 @@
 	<div class="container">
 		<div class="section" id="head">
 			<div class="top clearfix">	
-				<div class="button"><a>Verti</a></div>
+				<div class="button"><a href="#">Verti</a></div>
 				<div class="sign"><span>by HTML5 UP</span></div>
 				<div class="nav">
 					<ul class="menu">
 						<li class="item"><a href="#">Welcome</a></li>
-						<li class="item w"><a href="#">Dropdown</a></li>
+						<li class="item w"><a class="link" href="#">Dropdown</a>
+							<ul class="sub">
+								<li class="subitem"><a href="#">SubItem1</a></li>
+								<li class="subitem"><a href="#">SubItem2</a></li>
+								<li class="subitem"><a href="#">SubItem3</a>
+									<i class="fas fa-caret-up"></i>
+									<ul class="drop">
+										<li class="dropitem"><a href="#">DropItem1</a></li>
+										<li class="dropitem"><a href="#">DropItem2</a></li>
+										<li class="dropitem"><a href="#">DropItem3</a></li>
+										<li class="dropitem last"><a href="#">DropItem4</a></li>
+									</ul>
+								</li>
+								<li class="subitem last"><a href="#">SubItem4</a></li>
+							</ul>
+						</li>
 						<li class="item w"><a href="#">Left Sidebar</a></li>
 						<li class="item w"><a href="#">Right Sidebar</a></li>
 						<li class="item w"><a href="#">No Sidebar</a></li>
 					</ul>
 				</div>
 			</div>
-
 			<div class="block clearfix">
 				<div class="text">
 					<h1>Hi. This is Verti.</h1>
@@ -33,15 +47,36 @@
 				</div>
 			
 				<div class="options">
-					<div class="function one">
+					<div class="function one clearfix">
 						<a href="#">Ok let`s go</a>
 						<i class="fas fa-arrow-alt-circle-right"></i>			
 					</div>
-					<div class="function two">
-						<a href="#">More info<i class="fas fa-question-circle"></i></a>
+					<div class="function two clearfix">
+						<a href="#">More info</a>
+						<i class="fas fa-question-circle"></i>
 					</div>	
 				</div>
 			</div> 
+		</div>
+
+		<div class="section" id="gallery">
+			<div class="middle clearfix">	
+				<div class="content ">
+					<h3>1</h3>
+					<p>2</p>
+					<p>3</p>
+				</div>
+				<div class="content">
+					<h3>1</h3>
+					<p>2</p>
+					<p>3</p>
+				</div>
+				<div class="content">
+					<h3>1</h3>
+					<p>2</p>
+					<p>3</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
