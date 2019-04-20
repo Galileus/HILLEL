@@ -244,13 +244,23 @@ ul, li {
 }
 
 .one {
-	background: #0A9ACF;
+	background: #12769a;
 	margin-bottom: 20px;
+	transition: all 0.7s ease;
+}
+
+.one:hover {
+	background: #0A9ACF;
 }
 
 .two {
 	background: #F2F2F2;
 	color: #FFFFFF;
+	transition: all 0.7s ease;
+}
+
+.two:hover {
+	background: #d2d2d2;
 } 
 
 .two i,
@@ -266,15 +276,55 @@ ul, li {
 }
 
 .content {
-	width:31.4%;
+	width:31.8%;
 	float: left;
 	border:1px solid white;
 	border-radius: 10px;
 	margin-right: 30px;
-	background: #FFFFFF;
+	height: 670px;	
 }
 
-.content:last-child {
+.content:nth-child(1) {
+	background: url(../img/pic01.jpg) no-repeat;
+	background-size: contain;
+	background-color: #FFFFFF;
+}
+
+.content:nth-child(2) {
+	background: url(../img/pic02.jpg) no-repeat;
+	background-size: contain;
+	background-color: #FFFFFF;
+}
+
+.content:nth-child(3) {
 	float: right;
 	margin-right: 0px;
+	background: url(../img/pic03.jpg) no-repeat;
+	background-size: contain;
+	background-color: #FFFFFF;
+}
+
+
+.words {
+	padding: 40px 30px;
+	margin-top: 360px;
+}
+
+.words h3 {
+	font-size: 23px;
+	font-weight: 800;
+	color: #444444;
+	margin-bottom: 10px;
+}
+
+.words h4,
+.words p {
+	font-size: 17px;
+	font-weight: 300;
+	color: #696969;
+	margin-bottom: 50px;
+}
+
+.words p {
+	line-height: 35px;
 }
