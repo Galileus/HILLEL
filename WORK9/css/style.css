@@ -35,6 +35,8 @@ ul, li {
 
 .nav {
 	padding: 20px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .menu {
@@ -49,16 +51,30 @@ ul, li {
 
 .menu .item a  {
 	background: white;
-	color: red;
+	color: black;
 	font-size: 15px;
 	border: 1px solid;
 	padding: 10px 15px;
 	display: block;
 }
 
-.menu .item a:hover  {
+.burger {
+	padding-bottom: 20px;
+}
+
+.item a:hover  {
 	background: yellow;
 }
+
+.nav a {
+	display: none;
+	background: white;
+	color: black;
+	font-size: 15px;
+	border: 1px solid;
+	padding: 10px 15px;
+}
+
 
 @media (max-width: 768px) {
 
@@ -69,16 +85,40 @@ ul, li {
 }
 
 .menu .item a  {
-margin-bottom: 20px;
+margin-bottom: 10px;
 }	
 }
 
 @media (max-width: 468px) {
 
-.menu {
+.nav a {
+	display: block;
+	position: relative;
+}
+
+.nav {
+	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: center; 
+	align-items:flex-end; 
 }
+
+.menu  {
+	position: absolute;
+	top: 70px;
+	right: 0;
+	display: none;	
+
+}
+
+
+.burger:hover ~ .menu  {
+	display: block;
+}
+
+.menu a:hover  {
+	display: block;
+}
+
 }
 
