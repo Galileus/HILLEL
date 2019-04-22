@@ -107,17 +107,20 @@ margin-bottom: 10px;
 	position: absolute;
 	top: 70px;
 	right: 0;
-	display: none;	
-
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease;
 }
 
 
 .burger:hover ~ .menu  {
-	display: block;
+	opacity: 1;
+	visibility: visible;
 }
 
-.menu a:hover  {
-	display: block;
+.menu:hover {
+	opacity: 1;
+	visibility: visible;
 }
 
 }
