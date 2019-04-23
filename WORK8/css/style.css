@@ -34,14 +34,16 @@ ul, li {
 
 
 
-/*-----------------head---------------------------------------*/
+/*-----------------HEAD---------------------------------------*/
 
 .container {
-	width: 100%;	
+	width: 1300px;
+	height: 100%;
+	margin: 0px auto;	
 }
 
 .section {
-	width: 85%;
+	width: 90%;
 	margin: 0px auto;
 }
 
@@ -187,9 +189,9 @@ ul, li {
 }
 
 
-/*-----------------BLOCK------------*/
+/*-----------------BLOCK--------------------------------*/
 
- .block {
+.block {
 	width: 100%;
 	background: white;
 	border-radius: 5px;
@@ -245,9 +247,9 @@ ul, li {
 }
 
 .one {
-	background: #12769a;
+	background: #2e94b9;
 	margin-bottom: 20px;
-	transition: all 0.7s ease;
+	transition: all 0.5s ease;
 }
 
 .one:hover {
@@ -269,8 +271,7 @@ ul, li {
 	color: #444444;
 }
 
-
-/*-----------------gallery---------------------------------------*/
+/*-----------------GALLERY---------------------------------------*/
 
 .middle {
 	padding: 50px 0;
@@ -278,37 +279,25 @@ ul, li {
 
 .content {
 	width:31%;
-	height: 565px;
 	float: left;
-	border:1px solid white;
+	background: white;
 	border-radius: 10px;
-	margin-right: 37px;
+	margin-right: 3.5%;
 }
 
-.content:nth-child(1) {
-	background: url(../img/pic01.jpg) no-repeat;
-	background-size: contain;
-	background-color: #FFFFFF;
-}
-
-.content:nth-child(2) {
-	background: url(../img/pic02.jpg) no-repeat;
-	background-size: contain;
-	background-color: #FFFFFF;
-}
-
-.content:nth-child(3) {
+.content:last-child {
 	float: right;
 	margin-right: 0px;
-	background: url(../img/pic03.jpg) no-repeat;
-	background-size: contain;
-	background-color: #FFFFFF;
 }
 
+.pic img {
+	display: block;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
 
 .words {
-	padding: 40px 30px;
-	margin-top: 260px;
+	padding: 45px 30px 30px;
 }
 
 .words h3 {
@@ -333,7 +322,7 @@ ul, li {
 	line-height: 35px;
 }
 
-/*-----------------about---------------------------------------*/
+/*-----------------ABOUT---------------------------------------*/
 
 #about {
 	width: 100%;
@@ -344,11 +333,9 @@ ul, li {
 
 .wrap {
 	width: 85%;
-	margin: 0px auto;
 	height: 100%;
 }
 
-.about,
 .staff {
 	width: 40%;
 	padding-left: 50px;
@@ -358,18 +345,15 @@ ul, li {
 
 .about {
 	width: 66%;
+	float: right;
 }
-
 
 .staff h1 {
 	font-size: 19px;
 	font-weight: 800;
 	color: #444;
 	margin-bottom: 15px;
-
 }
-
-
 
 .screen img {
     display: block;
@@ -378,8 +362,7 @@ ul, li {
 }
 
 .screens div{
-	padding-bottom: 15px; 
-
+	padding: 20px 0; 
 }
 
 .screens div:nth-child(2n+1) {
@@ -390,28 +373,19 @@ ul, li {
 	float: right;
 }
 
-.but_more {
-	width: 140px;
-	height:65px;
-	padding: 5px;
+.more {
+	margin: 0px;
+	height: auto;
 }
 
-
-.but_more a {
+.more a {
+	padding: 15px 10px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-weight: 800;
+	font-size: 22px;
+	color: #ffffff;
 	display: block;
-	background: 
+	line-height: 0;
 }
 
-
-/* 
-@media (min-width: 1280px) {
-
-.section {
-	width: 65%;
-}
-
-.wrap {
-	width: 65%;
-}
-
-} */
