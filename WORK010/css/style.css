@@ -1,0 +1,60 @@
+body {
+	color:#fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background: #ECECEC;	
+}
+
+div, p, a, img, form, button {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0px;
+	margin: 0px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*-----------------head--------------------------------*/
+
+
+.main {
+	width: 100%;
+	height: 100px;
+	background: red;
+} 
+
+.logo {
+	padding-top: 30px;
+}
+
+@keyframes shadow {
+from {text-shadow: 0 0 3px black;}
+50% {text-shadow: 0 0 30px black;}
+to {text-shadow: 0 0 3px black;}
+}
+
+.logo a{
+	width: 60px;
+	display: block;
+	padding: 5px;
+	margin-left: 20px;
+	background: white;
+	color: red;
+	font-size: 15px;
+	border: 1px solid;
+	border-radius: 10px;
+	animation: shadow  2s infinite ease-in-out;
+}
+
+
