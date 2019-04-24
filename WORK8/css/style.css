@@ -54,9 +54,7 @@ ul, li {
 .button, 
 .sign {
 	float: left;
-	width: 140px;
-	height:65px;
-	padding: 5px;
+	padding: 0px 10px;
 }
 
 .button {
@@ -70,9 +68,10 @@ ul, li {
 	text-align: center;
 	font-weight: 400;
 	font-size: 56px;
-	line-height: 60px;
+	line-height: 50px;
 	color: #ffffff;
 	display: block;
+	padding: 8px 0;
 }
 
 .sign span {
@@ -332,27 +331,34 @@ ul, li {
 }
 
 .wrap {
-	width: 85%;
-	height: 100%;
+	border:1px solid black;
+}
+
+.wrap > div {
+	float: left;
+
+	padding-left: 5%;
 }
 
 .staff {
-	width: 40%;
-	padding-left: 50px;
-    padding-top: 50px;
-    float: left;
+	width: 34.5%;	
 }
 
 .about {
-	width: 66%;
-	float: right;
+	width: 65.5%;
+	height: 406px;
 }
 
 .staff h1 {
 	font-size: 19px;
 	font-weight: 800;
 	color: #444;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
+}
+
+.screens {
+	width: 100%;
+	margin-bottom: 50px;
 }
 
 .screen img {
@@ -361,12 +367,13 @@ ul, li {
     border-radius: 8px;
 }
 
-.screens div{
-	padding: 20px 0; 
+.screens div {
+	padding: 6% 0 0 0;
 }
 
 .screens div:nth-child(2n+1) {
 	float: left;
+/* 	padding-left: 0; */
 }
 
 .screens div:nth-child(2n) {
@@ -374,12 +381,13 @@ ul, li {
 }
 
 .more {
-	
+	margin: 0px;
+	height: auto;
 
 }
 
 .more a {
-	padding: 15px 10px;
+	padding:20px 15px;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	font-weight: 800;
@@ -388,4 +396,25 @@ ul, li {
 	display: block;
 	line-height: 0;
 }
+
+.more i {
+	margin-right: 10px;
+} 
+
+
+.about h2 {
+	color: #444;
+	font-size: 36px;
+	font-weight: 800;
+	margin-bottom: 40px;
+}
+
+.about p {
+	color: #696969;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 36px;
+	margin-bottom: 32px;
+}
+
 
