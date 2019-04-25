@@ -1,4 +1,4 @@
-/*--------------main----------------------*/
+/*--------------MAIN----------------------*/
 body {
 	color:#fff;
 	margin: 0px;
@@ -32,38 +32,36 @@ ul, li {
   clear: both;
 }
 
-
-
-/*-----------------HEAD---------------------------------------*/
+header,
+footer,
+section {
+	width: 100%;
+	margin-bottom: 50px;
+}
 
 .container {
 	width: 1300px;
+	margin:0px auto;
 	height: 100%;
-	margin: 0px auto;	
 }
 
-.section {
-	width: 90%;
-	margin: 0px auto;
-}
-
+/*-----------------HEADER---------------------------------------*/
 .top {
 	padding: 85px 0 50px;
 }
 
-.button, 
+.verti, 
 .sign {
 	float: left;
-	padding: 0px 10px;
 }
 
-.button {
+.verti{
+	border-radius:5px;
 	background: #FF4486;
 	margin-right: 15px;
-	border-radius:5px; 
 }
 
-.button a {
+.verti a {
 	font-family: 'Oleo Script', cursive;
 	text-align: center;
 	font-weight: 400;
@@ -71,23 +69,23 @@ ul, li {
 	line-height: 50px;
 	color: #ffffff;
 	display: block;
-	padding: 8px 0;
+	padding: 8px 8px 8px 5px;
 }
 
 .sign span {
 	text-align: center;
 	font-weight: 800;
 	font-size: 16px;
-	line-height: 60px;
+	line-height: 70px;
 	color: #696969;
-	display: inline-block;	
+	display: block;	
 }
 
 /*-----------------menu------------*/
 
-.nav {
+nav {
 	float: right;
-	padding: 25px 0;
+	padding: 20px 0;
 }
 
 .menu .item {
@@ -188,24 +186,19 @@ ul, li {
 }
 
 
-/*-----------------BLOCK--------------------------------*/
+/*-----------------block-------------------*/
 
 .block {
 	width: 100%;
 	background: white;
-	border-radius: 5px;
+	border-radius: 10px;
 	padding: 50px;
 }
 
 .text {
 	float: left;
-	width: 50%; 
-}
-
-.options {
-	float: right;
-	width: 45%;	
-}  
+	width: 40%; 
+} 
 
 .text h1 {
 	text-align: left;
@@ -222,17 +215,22 @@ ul, li {
 	font-size: 40px;
 	color: #696969;
 	padding: 5px 10px;
-} 
+}
 
-.function {
-	width:90%;
-	height: 100px;
+/*-----------------buttons-----------------*/
+.options {
+	float: right;
+	width: 40%;	
+}  
+
+.button {
+	width:100%;
 	border-radius: 5px;
 	float: right;
 }
 
-.function i,
-.function a {
+.button i,
+.button a {
 	font-weight: 800;
 	font-size: 39px;
 	color: #FFFFFF;
@@ -240,9 +238,9 @@ ul, li {
 	float: left;
 }
 
-.function i {
+.button i {
 	float: right;
-	margin-top: 10px;
+	padding: 35px 30px 25px;
 }
 
 .one {
@@ -257,8 +255,7 @@ ul, li {
 
 .two {
 	background: #F2F2F2;
-	color: #FFFFFF;
-	transition: all 0.7s ease;
+	transition: all 0.5s ease;
 }
 
 .two:hover {
@@ -321,26 +318,27 @@ ul, li {
 	line-height: 35px;
 }
 
-/*-----------------ABOUT---------------------------------------*/
+/*-----------------INFO---------------------------------------*/
 
-#about {
-	width: 100%;
-	background: white;
+#info {
+	background: white;	
+}
+
+.wrap {
 	padding: 80px 0px;
-	height: 100%;
 }
 
 .wrap > div {
 	float: left;
-	padding-left: 5%;
 }
 
 .staff {
-	width: 34.5%;	
+	width: 29.5%;	
 }
 
 .about {
-	width: 65.5%;
+	padding-left: 5%;
+	width: 70.5%;
 }
 
 .staff h1 {
@@ -374,8 +372,9 @@ ul, li {
 }
 
 .more {
-	margin: 0px;
-	height: auto;
+	width: 20%;
+	margin:0px;
+	float: left; 
 }
 
 .more a {
@@ -466,7 +465,7 @@ text-decoration:underline;
 }
 
 .subbar {
-	margin-bottom: 10%;
+	margin-bottom: 8%;
 }
 
 .subbar li {
