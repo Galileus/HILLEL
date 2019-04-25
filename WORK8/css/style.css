@@ -4,7 +4,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Open Sans', sans-serif;
-	background: #ECECEC;	
+	background: #F0F0F0;	
 }
 
 div, p, a, img, form, button {
@@ -117,7 +117,7 @@ nav {
 .sub {
 	position: absolute;
 	left: 0px;
-	margin-top: 16px;
+	margin-top: 11px;
     padding:10px 0px;
     width: 180px;
 	opacity: 0;
@@ -417,6 +417,7 @@ nav {
 
 .about p> a {
 text-decoration:underline;
+color: #0090c5;
 }
 
 /*-----------------FOOTER---------------------------------------*/
@@ -468,35 +469,30 @@ text-decoration:underline;
 }
 
 .subbar {
-	margin-bottom: 8%;
+	margin-bottom: 3%;
 }
 
 .subbar li {
 	float: left;
 	margin-right: 3%;
+	border:1px solid;
 }
 
 .subbar li a {
 	display: block;
-	width: 2.5em;
-	height: 2.5em;
 	text-align:center;
-	line-height: 2.5em;
 	border-radius: 0.35em;
-	opacity: 0.75;	
-	padding: 0;
+	padding: 2em;
+	font-size: 2.5em;
+	color: #575757;
 }
 
-.subbar .fab {
-	color:#222;
-	font-size: 2.75em;
-	background: #f3f3f3;
-	transition: all 0.5s ease-in-out;
+.subbar .four {
+	background: green;
+    font-size: 2em;
+    padding: 1px;
 }
 
-.subbar .fab:hover {
-	color: #8a8989;
-}
 
 .copyright {
 	padding-top: 64px;
