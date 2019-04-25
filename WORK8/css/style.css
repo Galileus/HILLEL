@@ -372,20 +372,23 @@ nav {
 }
 
 .more {
-	width: 20%;
-	margin:0px;
-	float: left; 
+	background: #2e94b9;
+	border:1px solid;
+	border-radius: 5px;
+	width: 32%;
+	transition: all 0.5s ease-in-out;	
+}
+
+.more:hover {
+	background: #0A9ACF;
 }
 
 .more a {
-	padding:20px 15px;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
+	padding:15px;
 	font-weight: 800;
 	font-size: 22px;
 	color: #ffffff;
 	display: block;
-	line-height: 0;
 }
 
 .more i {
