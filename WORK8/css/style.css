@@ -36,7 +36,6 @@ header,
 footer,
 section {
 	width: 100%;
-	margin-bottom: 50px;
 }
 
 .container {
@@ -244,7 +243,7 @@ nav {
 }
 
 .one {
-	background: #2e94b9;
+	background: #0090C5;
 	margin-bottom: 20px;
 	transition: all 0.5s ease;
 }
@@ -269,8 +268,8 @@ nav {
 
 /*-----------------GALLERY---------------------------------------*/
 
-.middle {
-	padding: 50px 0;
+#gallery {
+	padding: 48px 0px;	
 }
 
 .content {
@@ -321,11 +320,12 @@ nav {
 /*-----------------INFO---------------------------------------*/
 
 #info {
-	background: white;	
+	background: white;
+	padding: 80px 0px;	
 }
 
 .wrap {
-	padding: 80px 0px;
+	
 }
 
 .wrap > div {
@@ -372,7 +372,7 @@ nav {
 }
 
 .more {
-	background: #2e94b9;
+	background: #0090C5;
 	border:1px solid;
 	border-radius: 5px;
 	width: 32%;
@@ -421,9 +421,9 @@ text-decoration:underline;
 
 /*-----------------FOOTER---------------------------------------*/
 
-#footer {
+footer {
 	width: 100%;
-	padding: 96px 50px 128px;
+	padding: 96px 0px 128px;
 }
 
 .foot-wrap >div {
@@ -433,6 +433,8 @@ text-decoration:underline;
 .foot-wrap >div:last-child {
 	margin-right: 0;
 }
+
+/*--------------bar----------*/
 
 .random {
 	width: 22%;
@@ -467,36 +469,45 @@ text-decoration:underline;
 	text-decoration:underline;
 }
 
+/*------------subbar----------*/
+
 .subbar {
 	margin-bottom: 8%;
 }
 
 .subbar li {
 	float: left;
-	margin-right: 3%;
+	margin-right: 8px;
 }
+
 
 .subbar li a {
 	display: block;
+	background: #555555;
 	width: 2.5em;
 	height: 2.5em;
-	text-align:center;
-	line-height: 2.5em;
-	border-radius: 0.35em;
-	opacity: 0.75;	
-	padding: 0;
-}
-
-.subbar .fab {
-	color:#222;
-	font-size: 2.75em;
-	background: #f3f3f3;
+	border-radius: 5px;
+	padding: 5px;
 	transition: all 0.5s ease-in-out;
 }
 
-.subbar .fab:hover {
-	color: #8a8989;
+.subbar li a:hover {
+	background: #949292;
+} 
+
+.subbar .fas,
+.subbar .fab {
+	font-size: 23px;
+ 	padding: 4px 0 0 5px;
+	color: white;
+	display: inline-block;
+	text-align: center;
 }
+
+
+
+
+/*-----------copyright----------*/
 
 .copyright {
 	padding-top: 64px;
