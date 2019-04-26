@@ -4,7 +4,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Open Sans', sans-serif;
-	background: #F0F0F0;	
+	background: #ECECEC;	
 }
 
 div, p, a, img, form, button {
@@ -36,7 +36,6 @@ header,
 footer,
 section {
 	width: 100%;
-	margin-bottom: 50px;
 }
 
 .container {
@@ -117,7 +116,7 @@ nav {
 .sub {
 	position: absolute;
 	left: 0px;
-	margin-top: 11px;
+	margin-top: 16px;
     padding:10px 0px;
     width: 180px;
 	opacity: 0;
@@ -244,7 +243,7 @@ nav {
 }
 
 .one {
-	background: #2e94b9;
+	background: #0090C5;
 	margin-bottom: 20px;
 	transition: all 0.5s ease;
 }
@@ -269,8 +268,8 @@ nav {
 
 /*-----------------GALLERY---------------------------------------*/
 
-.middle {
-	padding: 50px 0;
+#gallery {
+	padding: 48px 0px;	
 }
 
 .content {
@@ -321,11 +320,12 @@ nav {
 /*-----------------INFO---------------------------------------*/
 
 #info {
-	background: white;	
+	background: white;
+	padding: 80px 0px;	
 }
 
 .wrap {
-	padding: 80px 0px;
+	
 }
 
 .wrap > div {
@@ -372,7 +372,7 @@ nav {
 }
 
 .more {
-	background: #2e94b9;
+	background: #0090C5;
 	border:1px solid;
 	border-radius: 5px;
 	width: 32%;
@@ -417,14 +417,13 @@ nav {
 
 .about p> a {
 text-decoration:underline;
-color: #0090c5;
 }
 
 /*-----------------FOOTER---------------------------------------*/
 
-#footer {
+footer {
 	width: 100%;
-	padding: 96px 50px 128px;
+	padding: 96px 0px 128px;
 }
 
 .foot-wrap >div {
@@ -434,6 +433,8 @@ color: #0090c5;
 .foot-wrap >div:last-child {
 	margin-right: 0;
 }
+
+/*--------------bar----------*/
 
 .random {
 	width: 22%;
@@ -468,31 +469,45 @@ color: #0090c5;
 	text-decoration:underline;
 }
 
+/*------------subbar----------*/
+
 .subbar {
-	margin-bottom: 3%;
+	margin-bottom: 8%;
 }
 
 .subbar li {
 	float: left;
-	margin-right: 3%;
-	border:1px solid;
+	margin-right: 8px;
 }
+
 
 .subbar li a {
 	display: block;
-	text-align:center;
-	border-radius: 0.35em;
-	padding: 2em;
-	font-size: 2.5em;
-	color: #575757;
+	background: #555555;
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 5px;
+	padding: 5px;
+	transition: all 0.5s ease-in-out;
 }
 
-.subbar .four {
-	background: green;
-    font-size: 2em;
-    padding: 1px;
+.subbar li a:hover {
+	background: #949292;
+} 
+
+.subbar .fas,
+.subbar .fab {
+	font-size: 23px;
+ 	padding: 4px 0 0 5px;
+	color: white;
+	display: inline-block;
+	text-align: center;
 }
 
+
+
+
+/*-----------copyright----------*/
 
 .copyright {
 	padding-top: 64px;
