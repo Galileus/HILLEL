@@ -1,0 +1,56 @@
+/*--------------MAIN----------------------*/
+body {
+	color:#fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background: #ECECEC;	
+}
+
+div, p, a, img, form, button {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0px;
+	margin: 0px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* header,
+footer,
+section {
+	width: 100%;
+}
+
+.container {
+	width: 1300px;
+	margin:0px auto;
+	height: 100%;
+} */
+
+/* @media (max-width: 768px) {
+
+.menu {
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center; 
+}	
+} */
+
+/*-----------------HEADER-------------------------*/
