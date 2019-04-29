@@ -32,26 +32,133 @@ ul, li {
   clear: both;
 }
 
-/* header,
+
+
+/*-----------------HEADER-------------------------*/
+
+ @media (min-width: 768px) {
+ 	
+body {
+	opacity:  0;
+	visibility: hidden;
+}	
+}
+
+header,
 footer,
 section {
 	width: 100%;
 }
 
 .container {
-	width: 1300px;
+	width: 768px;
 	margin:0px auto;
-	height: 100%;
-} */
+	background: white;
+	border: 1px solid #DEDEDE;
+	border-bottom: none; 
+} 
 
-/* @media (max-width: 768px) {
+.gallery {
+	margin : 10px 20px;	
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.title {
+	padding: 10px 0px;
+	width: 30%;
+}
+
+.title h1 {
+	font-size: 16px;
+	font-weight: 400;
+	color: #606060;
+}
+
+.info {
+	padding: 15px 0px;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items:flex-start;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.info >div {
+	margin-bottom: 5px;
+}
+
+.text {
+	display: flex;
+	justify-content: flex-start;
+	align-items:center;
+
+}
+
+.text span {
+	display: block;
+	font-size: 14px;
+}
+
+.conf {
+	color: #656565;
+	margin-right: 5px;
+}
+
+.answ {
+	color: #000;
+}
+
+.img {
+	width: 20%;
+}
+
+::-webkit-progress-bar {
+    background: #EEEEEE;
+}
+::-webkit-progress-value {
+    background: red;
+}
+
+progress {
+    color: red;
+    background: #EEEEEE;
+} 
+
+
+.comment {
+	padding: 15px 20px;
+}
+
+.comment h2 {
+	font-size: 14px;
+	font-weight: 400;
+	color: #606060;
+}
 
 .menu {
-	flex-direction: column;
+	padding: 20px;
+	display: flex;
 	justify-content: space-around;
-	align-items: center; 
-}	
-} */
+}
 
-/*-----------------HEADER-------------------------*/
+.menu li {	
+	width: 22%
+}
 
+.item {
+	display: block;
+	padding: 5px;
+	margin-left: 5px;
+	color: #656565;
+	justify-content: space-around;
+}
+
+.fas, .far {
+	margin-right: 10px;
+}
