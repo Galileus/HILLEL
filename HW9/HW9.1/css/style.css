@@ -1,0 +1,150 @@
+/*--------------MAIN----------------------*/
+body {
+	color:#373737;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background: white;	
+}
+
+div, p, a, img, form, button {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0px;
+	margin: 0px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------------HEAD------------------*/
+header,
+footer,
+section {
+	width: 100%;
+} 
+
+@media (min-width: 480px) {
+	.container {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+
+.container {
+	width: 480px;
+	margin:0px auto;
+	padding: 0 20px;
+	border-left:2px solid #DADCE0;
+	border-right:2px solid #DADCE0;
+}
+
+
+
+.title {
+	padding: 25px 0;
+	border-bottom: 2px solid #DADCE0;
+	display: flex;
+	 justify-content: space-between;
+}
+
+
+.title a {
+	display: block;
+	height: 20px;
+	color: #FFB64C;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/*-------------info ------------------*/
+
+.info {
+	padding: 20px 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-end;
+	align-items:flex-start;
+	padding-right: 20px;
+	width: 170px;
+}
+
+.menu li {	
+	margin: 5px;
+	color: #BDBDBD;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.fas {	
+	margin-right: 10px;
+}
+
+.far {
+	color: #DADCE0;
+	margin-left: 10px;
+	font-size: 16px;
+}
+ 
+.right li {
+	color: #4E4E4E;
+} 
+
+
+/*---------------ABOUT----------------*/
+
+.about {
+	justify-content: flex-start;
+}
+
+.down {
+	margin-left: 10px;
+	transform: rotate(90deg);
+}
+
+.date {
+	padding: 25px 0 10px;
+	border-bottom: 2px solid #FFB64C;	
+}
+
+/*---------------price----------------*/
+
+.price h2 {
+	padding: 10px 0;
+	color: #4E4E4E;
+	font-size: 14px;
+	font-weight: 600; 
+}
+
+.desc {
+	padding: 10px 0;
+	border-bottom: 1px solid #DADCE0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.desc span {
+	display: block;	
+}

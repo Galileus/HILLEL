@@ -25,7 +25,7 @@ ul, li {
 	margin: 0px;
 }
 
-/*-----------------head--------------------------------*/
+/*-------------head--------------*/
 
 header {
 	width: 100%;
@@ -38,10 +38,10 @@ header {
 	display: flex;
     justify-content: flex-end;
     padding: 20px;
-}
+} 
 
-.container a {
-	margin-right: 20px;
+.menu a {
+	margin-right: 10px;
 	background: white;
 	color: black;
 	font-size: 15px;
@@ -55,21 +55,73 @@ header {
 	justify-content: flex-end;
 }
 
-.burger {
-	display: none;
-}
-
 .container a:hover {
 	background: yellow;
 }
 
-/*-----------------768px-------------------------*/
+/*-------------button--------------*/
+
+.burger {
+	margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+}
+
+.burger span::before,
+.burger span::after,
+.burger span {
+	position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: -10px;
+    margin-top: -1px;
+	width: 20px;
+	height: 2px;
+	background: black;
+}
+
+.burger span::before,
+.burger span::after {
+	content: '';
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.burger span::before {
+    transform: translateY(-5px);
+}
+.burger span::after {
+    transform: translateY(5px);
+}
+
+.menu-btn_active span:before {
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left bottom;
+}
+.menu-btn_active span:after {
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left top;
+}
+
+.burger {
+	display: none;
+}
+
+/*----------------768px--------------*/
 
 @media (max-width: 768px) {
 
 .container {
 	justify-content: center;
 }
+
 .menu {
 	flex-direction: column;
 }
@@ -79,7 +131,7 @@ header {
 }
 }
 
-/*-----------------468px-------------------------*/
+/*----------------468px-------------*/
 
 @media (max-width: 468px) {
 
@@ -97,9 +149,19 @@ header {
 	visibility: hidden;
 	transition: all 0.5s ease;
 }
-
  
 .burger:hover ~ .menu  {
+ 	opacity: 1;
+	visibility: visible;
+}
+
+.menu:hover   {
+ 	opacity: 1;
+	visibility: visible;
+}
+
+
+.burger:hover   {
  	opacity: 1;
 	visibility: visible;
 }
