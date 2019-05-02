@@ -36,13 +36,7 @@ ul, li {
 
 /*-----------------HEADER-------------------------*/
 
- @media (min-width: 768px) {
- 	
-body {
-	opacity:  0;
-	visibility: hidden;
-}	
-}
+@media (max-width: 768px) {
 
 header,
 footer,
@@ -51,7 +45,6 @@ section {
 }
 
 .container {
-	width: 768px;
 	margin:0px auto;
 	background: white;
 	border: 1px solid #DEDEDE;
@@ -161,4 +154,12 @@ progress {
 
 .fas, .far {
 	margin-right: 10px;
+}
+
+}
+
+@media (min-width: 769px){
+    .container{
+        display: none;
+    }
 }
