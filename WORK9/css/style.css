@@ -61,7 +61,7 @@ header {
 
 /*-------------button--------------*/
 
-.burger {
+.burger a {
 	margin-right: 10px;
     width: 40px;
     height: 40px;
@@ -99,16 +99,6 @@ header {
     transform: translateY(5px);
 }
 
-.menu-btn_active span:before {
-  transform: rotate(-35deg);
-  width: 10px;
-  transform-origin: left bottom;
-}
-.menu-btn_active span:after {
-  transform: rotate(35deg);
-  width: 10px;
-  transform-origin: left top;
-}
 
 .burger {
 	display: none;
