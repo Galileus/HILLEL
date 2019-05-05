@@ -3,7 +3,7 @@ body {
 	color:#fff;
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Arial, sans-serif;
 	background: #ECECEC;	
 }
 
@@ -51,12 +51,22 @@ section {
 	height: 100%;
 }
 
+.content {
+	background: #FAFAFA;
+	border-bottom: 1px solid #EDEDED;
+	padding: 20px 25px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
 .head {
 	background: #E91E63;
 	padding: 10px 25px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	box-shadow: 0px 1px 10px 0px black;
 }
 
 .left {
@@ -67,22 +77,26 @@ section {
 
 h1 {	
     font-size: 26px;
-    font-weight: 400;
-    font-family: Arial, sans-serif;
+    font-weight: 400;    
 }
 
 .right {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	padding-bottom: 10px;
 }
 
 .right a {
 	width: 20px;
     height: 20px;  
     display: block;
-    padding-top: 45px;
-    font-size: 16px;
+    color: white;
+    font-size: 25px;
+}
+
+.right a:first-child {
+	margin-right: 100%;
 }
 
 /*-----------------burger--------*/
@@ -127,8 +141,93 @@ h1 {
     transform: translateY(5px);
 }
 
+.text {
+	width: 81%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 
 }
+
+.text h2 {
+	color: #292727;
+	font-size: 18px;
+	font-weight: 500;	
+}
+
+.text h3 {
+	color: #292727;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 5px 0;	
+}
+
+.letter {
+	display: block;
+	height: 15px;
+	color: #848484;
+	font-size: 12px;
+	font-weight: 400;
+	overflow: hidden;	
+}
+
+.sign {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.sign p, a {
+	display: block;
+	color: #848484;
+	font-size: 14px;
+	font-weight: 400;	
+}
+
+.sign a {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 20px;
+}
+
+/*-----------------burger--------*/
+
+.button {
+	position: absolute;
+	top: 85%;
+	left:80%;
+}
+
+.button a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #18FFFF;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 1px 10px 0px black;
+  transition: all 0.2s ease;
+}
+
+.button span {
+  background: black;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -1px;
+}
+
+.button span:last-child {  
+  transform: rotate(-90deg);
+  transform-origin: right;
+  margin-top: -2px;  
+}
+
+
 
 
 @media (min-width: 481px){
