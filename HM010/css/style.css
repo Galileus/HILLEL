@@ -1,0 +1,139 @@
+/*--------------MAIN----------------------*/
+body {
+	color:#fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background: #ECECEC;	
+}
+
+div, p, a, img, form, button {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0px;
+	margin: 0px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-----------------HEADER-------------------------*/
+
+@media (max-width: 480px) {
+
+body {
+	border: 1px solid #1A1A1A;
+}
+
+header,
+footer,
+section {
+	width: 100%;
+}
+
+.container {
+	margin:0px auto;
+	height: 100%;
+}
+
+.head {
+	background: #E91E63;
+	padding: 10px 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+h1 {	
+    font-size: 26px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+
+.right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.right a {
+	width: 20px;
+    height: 20px;  
+    display: block;
+    padding-top: 45px;
+    font-size: 16px;
+}
+
+/*-----------------burger--------*/
+
+.burger {
+
+}
+
+.burger a {
+	margin-right: 40px;
+    width: 20px;
+    height: 20px;  
+    position: relative;
+    display: block;
+    padding-top: 45px;
+}
+
+.burger span::before,
+.burger span::after,
+.burger span {
+	position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: -10px;
+    margin-top: -1px;
+	width: 20px;
+	height: 2px;
+	background: #fff;
+}
+
+.burger span::before,
+.burger span::after {
+	content: '';
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.burger span::before {
+    transform: translateY(-5px);
+}
+.burger span::after {
+    transform: translateY(5px);
+}
+
+
+}
+
+
+@media (min-width: 481px){
+    .container{
+        display: none;
+    }
+}
+
