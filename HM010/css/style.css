@@ -211,7 +211,7 @@ h1 {
 }
 
 .button span {
-  background: black;
+  background: #377575;
   width: 20px;
   height: 2px;
   position: absolute;
@@ -223,16 +223,17 @@ h1 {
 
 .button span:last-child {  
   transform: rotate(-90deg);
-  transform-origin: right;
+  transform-origin: center;
   margin-top: -2px;  
+}
 }
 
 
 
-
-@media (min-width: 481px){
+@media (min-width: 480px){
     .container{
-        display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
