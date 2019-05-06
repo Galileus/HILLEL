@@ -26,12 +26,6 @@ ul, li {
 	margin: 0px;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /*-----------------HEADER-------------------------*/
 
 @media (max-width: 480px) {
@@ -49,14 +43,6 @@ section {
 .container {
 	margin:0px auto;
 	height: 100%;
-}
-
-.content {
-	background: #FAFAFA;
-	border-bottom: 1px solid #EDEDED;
-	padding: 20px 25px 10px;
-	display: flex;
-	justify-content: space-between;
 }
 
 .head {
@@ -97,6 +83,14 @@ h1 {
 
 .right a:first-child {
 	margin-right: 100%;
+}
+
+.content {
+	background: #FAFAFA;
+	border-bottom: 1px solid #EDEDED;
+	padding: 20px 25px 10px;
+	display: flex;
+	justify-content: space-between;
 }
 
 /*-----------------burger--------*/
@@ -195,7 +189,7 @@ h1 {
 
 .button {
 	position: absolute;
-	top: 85%;
+	top: 72%;
 	left:80%;
 }
 

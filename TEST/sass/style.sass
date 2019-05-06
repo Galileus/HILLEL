@@ -1,0 +1,191 @@
+/*-----------------HEADER-------------------------*/
+body 
+	color: #fff
+	margin: 0px
+	padding: 0px
+	background: #ECECEC	
+
+div, p, a, img, form, button 
+	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p 
+	padding: 0px
+	margin: 0px	
+a 
+	text-decoration: none
+
+ul, li 
+	display: block
+	padding: 0px
+	margin: 0px
+
+/*-----------------@extenders------------------------- */
+
+%dis-flex-str-cnt
+	display: flex
+	justify-content: flex-start 
+	align-items: center
+	
+%dis-flex-end-cnt
+	display: flex
+	justify-content: flex-end 
+	align-items: center
+	
+%dis-flex-spsbtw-cnt
+	display: flex
+	justify-content: space-between
+	align-items: center			  
+	
+
+/*-----------------HEADER-------------------------*/
+body
+	border: 1px solid #1A1A1A
+	
+header,
+article,
+footer 
+	width: 100%
+ 
+.container 
+	margin: 0px auto
+	height: 100%
+	
+.head 
+	background: #E91E63
+	padding: 10px 25px
+	@extend %dis-flex-spsbtw-cnt
+	position: relative
+	box-shadow: 0px 1px 10px 0px black
+	
+
+.left
+	@extend %dis-flex-str-cnt
+	
+	h1
+		font-size: 26px
+		font-weight: 400
+
+	.burger
+		a 
+			margin-right: 40px
+			width: 20px
+			height: 20px
+			position: relative
+			display: block
+			padding-top: 45px
+			
+		span
+			position: absolute
+			top: 50%
+			right: 50%
+			margin-right: -10px
+			margin-top: -1px
+			width: 20px
+			height: 2px
+			background: #fff
+		
+			&:first-child 
+				transform: translateY(-5px)
+			
+			&:last-child
+				transform: translateY(5px)
+
+.right	
+	@extend %dis-flex-end-cnt
+	padding-bottom: 10px
+	
+	a
+		width: 20px
+		height: 20px
+		display: block
+		color: white
+		font-size: 25px
+		
+		&:first-child
+			margin-right: 100%      
+	
+section
+	background: #FAFAFA
+	border-bottom: 1px solid #EDEDED
+	padding: 20px 25px 10px
+	@extend %dis-flex-spsbtw-cnt
+
+.text
+	width: 81%
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+
+	h2
+		color: #292727
+		font-size: 18px
+		font-weight: 500	
+
+
+	h3
+		color: #292727
+		font-size: 16px
+		font-weight: 500
+		margin: 5px 0	
+
+
+.letter
+	display: block
+	height: 15px
+	color: #848484
+	font-size: 12px
+	font-weight: 400
+	overflow: hidden	
+
+
+.sign 
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+
+	p, a
+		display: block
+		color: #848484
+		font-size: 14px
+		font-weight: 400	
+
+
+	a
+		display: flex
+		justify-content: flex-end
+		font-size: 20px
+		margin-top: 20px 		
+
+.button
+	position: absolute
+	top: 72%
+	left: 80%
+
+	a
+		display: block
+		width: 60px
+		height: 60px
+		background-color: #18FFFF
+		border-radius: 50%
+		position: relative
+		box-shadow: 0px 1px 10px 0px black
+		transition: all 0.2s ease
+
+	span 
+		background: #377575
+		width: 20px
+		height: 2px
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -10px
+		margin-top: -1px
+
+
+		&:last-child 
+			transform: rotate(-90deg)
+			transform-origin: center
+			margin-top: -2px
+
+	
