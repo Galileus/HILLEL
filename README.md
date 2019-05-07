@@ -26,7 +26,7 @@ lection_10_ SASS + practice
 import
 nesting
 variables
-mixins + mixins with params
+mixins + mixins with paramtrs
 
 
 lection_11_ HTML5, CSS3
