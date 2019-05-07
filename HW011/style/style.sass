@@ -1,6 +1,6 @@
 @media (max-width: 480px)
 
-	/*-----------------vars--------------- */
+	/*-----------------vars------- */
 
 	$head_back_col: #E91E63
 	$head_font_col: #FFFFFF
@@ -8,11 +8,12 @@
 	$sect_back_col:	#FAFAFA
 	$sect_title_col: #000
 	$sect_text_col: #666
+	$sect_sign_col: #666
 
 	$all_font_col: #FFFFFF
 	
 
-	/*-----------------@extenders--------------- */
+	/*-------------@extenders-------- */
 
 	%dis-flex-str-cnt
 		display: flex
@@ -31,9 +32,16 @@
 
 	/*-----------------mixines--------------- */
 	
-	@mixin box
-		width: 20px
-		padding: 5px	
+	@mixin box($width, $height)			
+			width: $width
+			height: $height
+			display: block
+			
+	@mixin font($font-size, $font-weight)			
+			font-size: $font-size 
+			font-weight: $font-weight 
+	
+	
 
 	/*-----------------main--------------- */		
 
@@ -91,12 +99,10 @@
 
 	.burger
 		a 				
-			width: 20px
-			height: 20px
-			position: relative
-			display: block
+			position: relative			
 			padding-top: 45px
 			margin-right: 40px
+			@include box(20px, 20px)
 			
 		span
 			position: absolute
@@ -104,9 +110,8 @@
 			right: 50%
 			margin-right: -10px
 			margin-top: -1px
-			width: 20px
-			height: 2px
 			background: $head_font_col
+			@include box(20px, 2px)
 		
 			&:first-child 
 				transform: translateY(-5px)
@@ -119,10 +124,8 @@
 		padding-bottom: 10px
 		
 		a
-			width: 20px
-			height: 20px
-			display: block
 			color: $head_font_col
+			@include box(20px, 20px)
 			font-size: 25px
 			
 			&:first-child
@@ -136,48 +139,36 @@
 		@extend %dis-flex-spsbtw-cnt
 
 	.text
-		width: 81%
-		display: flex
-		flex-direction: column
-		align-items: flex-start
+		width: 85% 
 
 		h2
-			color: $sect_title_col
-			font-size: 18px
-			font-weight: 500	
+			color: $sect_title_col			
+			@include font(18px, 500)	
 
 		h3
-			color: $sect_title_col
-			font-size: 16px
-			font-weight: 500
+			color: $sect_title_col			
+			@include font(16px, 500)
 			margin: 5px 0
 
 		p
-			display: block
-			height: 15px
 			color: $sect_text_col
-			font-size: 12px
-			font-weight: 400
-			overflow: hidden	
-
+			@include box(90%, 15px)						
+			@include font(12px, 500)
+			overflow: hidden 	
 
 	.sign 
+		width: 15%
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-
+		text-align: right 
 
 		p, a
-			display: block
-			color: #848484
-			font-size: 14px
-			font-weight: 400	
-
-
+			display: inline-block
+			color: $sect_sign_col
+			@include font(14px, 500)
 		a
-			display: flex
-			justify-content: flex-end
-			font-size: 20px
+			@include font(20px, 500)
 			margin-top: 20px 		
 
 	.button
@@ -186,19 +177,16 @@
 		left: 80%
 
 		a
-			display: block
-			width: 60px
-			height: 60px
+			@include box(60px, 60px)
 			background-color: #18FFFF
 			border-radius: 50%
 			position: relative
 			box-shadow: 0px 1px 10px 0px black
 			transition: all 0.2s ease
 
-		span 
+		span 			
+			@include box(20px, 2px)
 			background: #377575
-			width: 20px
-			height: 2px
 			position: absolute
 			top: 50%
 			left: 50%
@@ -211,3 +199,7 @@
 				transform-origin: center
 				margin-top: -2px
 
+@media (min-width: 481px)
+	body 
+		opacity: 0
+		visibility: hidden
