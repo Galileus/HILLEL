@@ -1,0 +1,56 @@
+/*--------------MAIN----------------------*/
+body {
+	color:#fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background: #ECECEC;	
+}
+
+div, p, a, img, form, button {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0px;
+	margin: 0px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header,
+footer,
+section {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	margin:0px auto;
+}
+
+/*-----------------HEADER------------*/
+
+.head {
+	background: green;
+	width: calc(90% - 100px);
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto; 
+}
