@@ -12,21 +12,6 @@ $all_font_col: #FFFFFF
 
 
 /*-------------@extenders-------- */
-
-%dis-flex-str-cnt
-	display: flex
-	justify-content: flex-start 
-	align-items: center
-	
-%dis-flex-end-cnt
-	display: flex
-	justify-content: flex-end 
-	align-items: center
-	
-%dis-flex-spsbtw-cnt
-	display: flex
-	justify-content: space-between
-	align-items: center
 	
 %dis-flex-column-spc_ar-centre
 	display: flex
@@ -34,19 +19,12 @@ $all_font_col: #FFFFFF
 	justify-content: space-around
 	align-items: center
 	
-%dis-flex-column-spc_btw-centre
-	display: flex
-	flex-direction: column
-	justify-content: space-between
-	align-items: center	
-	
 %dis-flex-cnt-cnt
 	display: flex
 	justify-content: center
 	align-items: center	
 
 /*-----------------mixines--------------- */
-
 @mixin box($width, $height )			
 		width: $width 
 		height: $height 
@@ -54,9 +32,7 @@ $all_font_col: #FFFFFF
 		
 @mixin font($size, $weight)			
 		font-size: $size 
-		font-weight: $weight 
-
-
+		font-weight: $weight
 
 /*-----------------main--------------- */		
 
@@ -85,37 +61,70 @@ ul, li
 	section,
 	footer 
 	width: 100%
- 
-
-	
 
 /*-----------------HEADER----------------------*/
 section
 	@extend %dis-flex-cnt-cnt
-	height: 100vh 
- 
+	height: 100vh
+	 
+a
+	color: #4267B2 
 
 .form-wrap	
-	@include box(600px, 400px)
+	@include box(650px, 420px)
 	display: flex
 	flex-direction: column
 	justify-content: space-between
 	align-items: center  
 	background: #FFF
+	border: 1px solid #d6d5d5
+	border-radius: 5px  
 	padding: 50px 0 40px
 	
 .user-info
 	@extend %dis-flex-column-spc_ar-centre    
 	 
 	h1 
-		color: $sect_title_col
+		color: #24292e
+		margin: 10px 0
+		font-size: 20px
+		font-weight: 400
+		font-family: Hellvetica, sans-serif
+
 	.mail
 		display: flex
-		justify-content: space-between
-		width: 200px 
-
-		p 
-			color: $sect_text_col	 
+		justify-content: space-around
+		width: 200px
+		color: #A9AFC4
+		font-size: 14px
+		font-weight: 400
+		font-family: Hellvetica, sans-serif			  
+	 
 
 .form
-	@extend %dis-flex-column-spc_ar-centre  		 
+	height: 150px
+	width: 250px  
+	@extend %dis-flex-column-spc_ar-centre
+	
+	input
+		width: 95%
+		padding: 5px 5px
+		
+	button
+		
+		border-radius: 4px
+		font-weight: 800 
+		width: 100%
+		
+	.submit
+		padding: 10px 5px
+		color: #FFF
+		background: #4267B2
+		
+	.reset
+		padding: 5px 5px
+		font-size: 12px
+		font-weight: bold
+		color: #6d6d6d
+		background: #F6F7F9
+		/*border: 1px solid  #CED0D4*/

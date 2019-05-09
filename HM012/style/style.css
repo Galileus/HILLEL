@@ -49,28 +49,66 @@ section {
   height: 100vh;
 }
 
+a {
+  color: #4267B2;
+}
+
 .form-wrap {
-  width: 600px;
-  height: 400px;
+  width: 650px;
+  height: 420px;
   display: block;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background: #FFF;
+  border: 1px solid #d6d5d5;
+  border-radius: 5px;
   padding: 50px 0 40px;
 }
 
 .user-info h1 {
-  color: #000;
+  color: #24292e;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Hellvetica, sans-serif;
 }
 .user-info .mail {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 200px;
+  color: #A9AFC4;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Hellvetica, sans-serif;
 }
-.user-info .mail p {
-  color: #666;
+
+.form {
+  height: 150px;
+  width: 250px;
+}
+.form input {
+  width: 95%;
+  padding: 5px 5px;
+}
+.form button {
+  border-radius: 4px;
+  font-weight: 800;
+  width: 100%;
+}
+.form .submit {
+  padding: 10px 5px;
+  color: #FFF;
+  background: #4267B2;
+}
+.form .reset {
+  padding: 5px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #6d6d6d;
+  background: #F6F7F9;
+  /*border: 1px solid  #CED0D4 */
 }
 
 /*# sourceMappingURL=style.css.map */
