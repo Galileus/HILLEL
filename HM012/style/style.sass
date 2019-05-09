@@ -1,0 +1,121 @@
+/*-----------------vars------- */
+
+$head_back_col: #E91E63
+$head_font_col: #FFFFFF
+
+$sect_back_col:	#FAFAFA
+$sect_title_col: #000
+$sect_text_col: #666
+$sect_sign_col: #666
+
+$all_font_col: #FFFFFF
+
+
+/*-------------@extenders-------- */
+
+%dis-flex-str-cnt
+	display: flex
+	justify-content: flex-start 
+	align-items: center
+	
+%dis-flex-end-cnt
+	display: flex
+	justify-content: flex-end 
+	align-items: center
+	
+%dis-flex-spsbtw-cnt
+	display: flex
+	justify-content: space-between
+	align-items: center
+	
+%dis-flex-column-spc_ar-centre
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: center
+	
+%dis-flex-column-spc_btw-centre
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center	
+	
+%dis-flex-cnt-cnt
+	display: flex
+	justify-content: center
+	align-items: center	
+
+/*-----------------mixines--------------- */
+
+@mixin box($width, $height )			
+		width: $width 
+		height: $height 
+		display: block
+		
+@mixin font($size, $weight)			
+		font-size: $size 
+		font-weight: $weight 
+
+
+
+/*-----------------main--------------- */		
+
+body 
+	color: $all_font_col
+	margin: 0px
+	padding: 0px
+	background: #E9EBEE
+	width: 100%
+	height: 100vh 	
+
+div, p, a, img, form, button 
+	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p 
+	padding: 0px
+	margin: 0px	
+a 
+	text-decoration: none
+
+ul, li 
+	display: block
+	padding: 0px
+	margin: 0px	 
+	header,
+	section,
+	footer 
+	width: 100%
+ 
+
+	
+
+/*-----------------HEADER----------------------*/
+section
+	@extend %dis-flex-cnt-cnt
+	height: 100vh 
+ 
+
+.form-wrap	
+	@include box(600px, 400px)
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center  
+	background: #FFF
+	padding: 50px 0 40px
+	
+.user-info
+	@extend %dis-flex-column-spc_ar-centre    
+	 
+	h1 
+		color: $sect_title_col
+	.mail
+		display: flex
+		justify-content: space-between
+		width: 200px 
+
+		p 
+			color: $sect_text_col	 
+
+.form
+	@extend %dis-flex-column-spc_ar-centre  		 
