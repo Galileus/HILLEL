@@ -66,6 +66,10 @@ ul, li
 section
 	@extend %dis-flex-cnt-cnt
 	height: 100vh
+	
+input[type='checkbox']
+	display: none
+
 	 
 a
 	color: #4267B2 
@@ -128,3 +132,6 @@ a
 		color: #6d6d6d
 		background: #F6F7F9
 		/*border: 1px solid  #CED0D4*/
+		
+#checkbox:checked ~ .form-wrap
+	background: #000	

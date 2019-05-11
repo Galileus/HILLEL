@@ -47,6 +47,11 @@ ul, li {
 /*-----------------HEADER---------------------- */
 section {
   height: 100vh;
+  position: relative;
+}
+
+input[type='checkbox'] {
+  display: none;
 }
 
 a {
@@ -109,6 +114,10 @@ a {
   color: #6d6d6d;
   background: #F6F7F9;
   /*border: 1px solid  #CED0D4 */
+}
+
+#checkbox:checked ~ .container {
+  background: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
