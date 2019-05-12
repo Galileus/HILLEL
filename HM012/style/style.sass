@@ -1,3 +1,6 @@
+input[type='checkbox']
+	display: none
+
 /*-----------------vars------- */
 
 $head_back_col: #E91E63
@@ -57,22 +60,39 @@ ul, li
 	display: block
 	padding: 0px
 	margin: 0px	 
-	header,
-	section,
-	footer 
-	width: 100%
 
 /*-----------------HEADER----------------------*/
+
+.head
+	width: 100%
+	height: 50px
+	background: #4267B2
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+.head-wrap
+	display: flex
+	justify-content: space-around
+	width: 450px
+	height: 25px
+	padding: 2px 10px
+
+
+#check
+	&:checked ~ .head
+		background: white		
+
+
 section
 	@extend %dis-flex-cnt-cnt
 	height: 100vh
-	
-input[type='checkbox']
-	display: none
-
 	 
 a
 	color: #4267B2 
+
+.container
+	position: relative
 
 .form-wrap	
 	@include box(650px, 420px)
@@ -113,6 +133,63 @@ a
 	input
 		width: 95%
 		padding: 5px 5px
+	
+
+	.rule
+		position: absolute
+		top: 54%
+		left: 70%
+		width: 210px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		opacity: 0
+
+
+		.fas
+			color: red
+			font-size: 33px
+			animation: sign 2s infinite
+			transition: all 0.5s ease-in
+
+		@keyframes sign 
+			0% 
+				color: red	    
+			50% 
+				color: orange
+				transform: translateX(10px) 
+			100% 
+				color: red
+
+		
+		span
+			display: block
+			border: 1px solid red
+			border-radius: 5px
+			color: black
+			line-height: 26px
+			background: red	
+			text-align: center
+			padding: 5px
+			animation: move 2s infinite
+			transition: all 0.5s ease-in
+
+		@keyframes move 
+			0% 
+				background: red	    
+			50% 
+				background: orange
+			100% 
+				background: red    
+
+	#pass
+		&:focus ~ .rule 
+			opacity: 1
+	#pass
+		&:focus 
+			border: 2px solid red
+
+
 		
 	button
 		
@@ -133,5 +210,4 @@ a
 		background: #F6F7F9
 		/*border: 1px solid  #CED0D4*/
 		
-#checkbox:checked ~ .form-wrap
-	background: #000	
+	

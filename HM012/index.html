@@ -12,35 +12,46 @@
 </head>
 <body>
 
+	
+	
+
+	<header>
+		<div class="container">
+			<input type="checkbox" id="check">
+	        <label class="head" for="check">
+	            <div class="head-wrap">
+	                <input type="password" name="password" maxlength="8" placeholder="Пароль">
+	                <input type="login" name="login" placeholder="Логін">
+	                <button class="submit" type="submit">Вхід</button>
+	            </div>
+	        </label>
+	    </div>    
+    </header>
+
     <section>
     	<div class="container">
-
-    				    <label class="main-nav" for="checkbox">
-        				<H1>123</H1>
-    					</label>
-					<div class="form-wrap">
-
-						<div class="user-info">
-							<img src="img/1.png" alt="user" width="80px">
-							<h1>Увійти як Vania Baklan</h1>
-							<div class="mail">
-								<p>vaniabaklan@ukr.net</p>								
-								<a href="">Не ви?</a>
-							</div>
-						</div>
-
-						<div class="form">
-							<input type="password" name="password" maxlength="12" placeholder="Пароль">
-							<button class="submit" type="submit">Вхід</button>
-							<button class="reset" type="submit">Відновити аккаунт</button>
-							<a href="#">Зареєструватися на Facebook</a>
-						</div>
+			<div class="form-wrap">
+				<div class="user-info">
+					<img src="img/1.png" alt="user" width="80px">
+					<h1>Увійти як Vania Baklan</h1>
+					<div class="mail">
+						<p>vaniabaklan@ukr.net</p>		
+						<a href="">Не ви?</a>
 					</div>
+				</div>
+
+                <div class="form">
+                    <input type="password" name="password" maxlength="12" placeholder="Пароль" id="pass">
+                    <div class="rule">
+	                    <i class="fas fa-arrow-alt-circle-left"></i>
+	                    <span>Warning, wrong pass!!!</span>
+                    </div>
+                    <button class="submit" type="submit">Вхід</button>
+                    <button class="reset" type="submit">Відновити аккаунт</button>
+                    <a href="#">Зареєструватися на Facebook</a>
+                </div>
+			</div>
         </div>
-        <input type="checkbox" id="checkbox">
     </section>
-
-
-
 </body>
 </html>    
