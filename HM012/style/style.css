@@ -47,7 +47,6 @@ ul, li {
 /*-----------------HEADER---------------------- */
 section {
   height: 100vh;
-  position: relative;
 }
 
 input[type='checkbox'] {
@@ -116,7 +115,7 @@ a {
   /*border: 1px solid  #CED0D4 */
 }
 
-#checkbox:checked ~ .container {
+#checkbox:checked ~ .form-wrap {
   background: #000;
 }
 
