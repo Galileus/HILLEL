@@ -1,0 +1,36 @@
+$mob_small: 320px
+$mob_mid: 420px
+$mob_large: 480px
+$tablet: 768px
+$laptop: 1024px
+$pc: 1280px
+
+
+
+
+@media screen and (min-width: $mob_small) and (max-width: 419px)
+	article
+		display: none	
+
+
+@media screen and (min-width: $mob_mid) and (max-width: 767px)
+
+	.inner
+		width: 342px
+
+	.slider
+		width: 242px
+
+	#right:checked ~ .inner .slider .wrap .content
+		transform: translate(-210px)
+
+@media screen and (min-width: $tablet) and (max-width: 1023px)
+
+	.inner
+		width: 552px
+
+	.slider
+		width: 452px
+
+	#right:checked ~ .inner .slider .wrap .content
+		transform: translate(-420px)
